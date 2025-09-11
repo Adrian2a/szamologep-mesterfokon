@@ -1,4 +1,5 @@
 
+
 def add(x, y):
     return x + y
 
@@ -12,7 +13,7 @@ def divide(x, y):
     return x / y
 
 
-print("Select operation.")
+print("m.")
 print("1.összeadás")
 print("2.kivonás")
 print("3.szorzás")
@@ -23,7 +24,7 @@ while True:
   
     choice = input("tiéd a választás, Neo(1/2/3/4/5): ")
 
-    if choice in ('1', '2', '3', '4', '5'):
+    if choice in ('1', '2', '3', '4',):
         try:
             num1 = float(input("írja be az ELSŐ számot: "))
             num2 = float(input("majd a másodikat: "))
@@ -44,6 +45,7 @@ while True:
             print(num1, "/", num2, "=", divide(num1, num2))
         elif choice =='5':
             print("akkor szia báttya")
+            break
     next_calculation = input("Ez az utolsó esélyed. Ezután nincs visszaút. Ha beveszed a kék pirulát, a történet véget ér, felébredsz az ágyadban, és azt hiszel, amit hinni akarsz. Ha beveszed a piros pirulát, Csodaországban maradsz, és én megmutatom, milyen mély a nyúlüreg.? (Piros tabletta/kék tabletta): ")
     if next_calculation == "kék tabletta"  :
       break
